@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+body, span, div, ul, li, img, dl, dt, dd, form, h1, h2, h3, h4, h5, h6,
+	label, p, ol, fieldset {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+h1, h2, h3 {
+	
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color: #333333;
+	background-color: #eee;
+	min-width: 1000px;
+	min-height: 600px;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cc0000;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #cc0000;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt5 {
+	margin-top: 5px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.ml10 {
+	margin-left: 20px;
+}
+
+.right .box iframe {
+	min-height: 500px;
+}
+
+input, button, select, textarea {
+	font: 12px/1.5 Microsoft YaHei, Helvitica, Verdana, Arial, san-serif
+}
+
+.more_hao {
+	background-color: #f2f2f2;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 28px;
+	width: 130px;
+	z-index: 999;
+	display: none;
+}
+
+.more_hao p {
+	border-bottom: solid 1px #ccc;
+}
+
+.more_hao p a {
+	color: #666;
+	border: none;
+	padding-left: 0;
+}
+
+.header_r .hove_span {
+	cursor: pointer;
+	padding: 0 15px 1px 20px;
+	background:
+		url(http://weixiaoxinpic.qiniudn.com/Public/news/img/ggg.png)
+		no-repeat right 13px;
+	position: relative;
+	display: inline-block;
+}
+
+.header .header_r .j1 {
+	color: #666;
+	background-image: none;
+	background-color: #f2f2f2;
+}
+
+.tips {
+	position: relative;
+	z-index: 2;
+}
+
+.tips:hover {
+	z-index: 3;
+	background: none;
+}
+
+.tips span {
+	display: none;
+	position: absolute;
+	top: 25px;
+	left: 5px;
+	width: 350px;
+	border: 1px solid #5B9CDB;
+	background-color: #5B9CDB;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 6px;
+	padding: 6px 6px 4px 6px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;
+	text-align: left;
+}
+
+.tips:hover span {
+	display: block;
+}
+
+.tips span:before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 100%;
+	left: 10px;
+	border-width: 0 8px 8px 8px;
+	border-style: solid;
+	border-color: #5B9CDB transparent;
+}
+
+.tips span:after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 100%;
+	left: 12px;
+	border-width: 0 6px 6px 6px;
+	border-style: solid;
+	border-color: #5B9CDB transparent;
+}
+
+.wirt_text1200 a {
+	padding: 5px 25px 4px;
+	text-decoration: none;
+}
+
+.wirt_text1200 .curs {
+	border-radius: 20px;
+	padding: 5px 25px 4px;
+	text-decoration: none;
+}
+
+.wirt_text1200 a:hover {
+	border-radius: 20px;
+	padding: 5px 25px 4px;
+	text-decoration: none;
+}
+
+.use_h {
+	margin: 0;
+}
+
+.use_h_l {
+	margin: 65px 0;
+}
+
+.use_h_r p {
+	display: block;
+	height: 0;
+	margin: 0 0 30px;
+}
+
+.use_h_r {
+	float: left;
+	margin: 10px 0 0 30px;
+}
+
+.g_r p {
+	height: 16px;
+	line-height: 26px;
+	margin: 10px 0 0;
+}
+
+.g_list li {
+	color: #666666;
+	height: 100%;
+	width: 95%;
+	line-height: 23px;
+	height: 23px;
+	overflow: hidden;
+	border-bottom: dashed 1px #CCC;
+}
+
+</
+style> <style>.g_list {
+	overflow: hidden;
+	position: relative;
+}
+
+.zh_block {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	float: left;
+	height: 270px;
+	margin: 0 -1px -1px 0;
+	position: relative;
+	width: 100%;
+}
+
+.use_h_l img:hover {
+	border: 1px solid #5B9CDB;
+}
+
+.use_h_l>span {
+	left: 45px;
+	top: 242px;
+	width: 101px;
+}
+
+.open_try {
+	color: #F57403;
+}
+
+.gn_l {
+	float: left;
+	overflow: hidden;
+	margin: 65px 10px 0 0;
+}
+
+.gn_l a {
+	padding: 3px 8px;
+	background-color: #028fde;
+	margin: 5px 0;
+	font-size: 16px;
+	color: #FFF;
+}
+
+.gn_l p {
+	overflow: hidden;
+	height: auto;
+	margin: 0;
+}
+
+.gn_m {
+	width: 530px;
+	margin: 0 0 0 20px;
+	overflow: hidden;
+	float: left;
+}
+
+.gn_m li {
+	float: left;
+	width: 260px;
+	margin: 5px 0;
+}
+
+.usez_ico {
+	float: left;
+	width: 50px;
+	margin: 5px 10px 0 0;
+}
+
+.usez_text {
+	float: left;
+	width: 190px;
+}
+
+.usez_text h2 {
+	background: none;
+	padding: 0;
+}
+
+.usez_text p {
+	margin: 5px 0;
+	overflow: hidden;
+	height: auto;
+}
+
+.zh_block {
+	height: 330px;
+}
+
+.zh_block:hover {
+	background-color: #FFF;
+}
+
+.gn_r {
+	float: left;
+	border-left: solid 1px #e2e2e2;
+	padding: 0 0 0 30px;
+	width: 320px;
+}
+
+.gn_r h2 {
+	background: none;
+	padding: 0;
+}
+
+.gn_r p {
+	border-bottom: solid 1px #efefef;
+	height: 36px;
+	line-height: 36px;
+	margin: 0;
+}
+
+.tongji {
+	width: 150px;
+	float: left;
+}
+
+.gn_m {
+	width: 570px;
+	margin: 0 0 0 20px;
+	overflow: hidden;
+	float: left;
+}
+
+.usez_text {
+	float: left;
+	width: 224px;
+}
+
+.gn_m li {
+	float: left;
+	width: 285px;
+	margin: 5px 0;
+}
+
+.gn_r {
+	float: left;
+	border-left: solid 1px #e2e2e2;
+	padding: 0 0 0 30px;
+	width: 286px;
+}
+
+.tongji {
+	width: 138px;
+	float: left;
+}
+
+.use_h_r a {
+	background-color: #028fde;
+	color: #FFFFFF;
+}
+
+.zh_block3 {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	float: left;
+	margin: 0 -1px -1px 0;
+	position: relative;
+	height: 105px;
+	width: 315px;
+}
+
+.g_l2 {
+	width: 360px;
+}
+
+.add_pic {
+	top: 29px;
+}
+
+.add_text {
+	top: 25px;
+	COLOR: #FFFFFF;
+}
+
+.a_block {
+	display: block;
+	height: 105px;
+	background-color: #5b9cdb;
+	width: 315px;
+}
+
+.g_l2 {
+	border-right: 1px solid #ccc;
+	float: left;
+	width: 360px;
+	height: 135px;
+}
+
+.zh_block:hover {
+	background-color: #f1f1f1;
+	border: 1px solid #028fde;
+}
+
+.zh_block2 {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	float: left;
+	height: 240px;
+	margin: 0 -1px -1px 0;
+	position: relative;
+	width: 198px;
+}
+
+.zhanghao {
+	min-height: 20px;
+}
+
+.footer {
+	margin: 20px 0 0 0;
+}
+
+#show_span {
+	color: red;
+	margin-left: 10px;
+}
+
+.txz {
+	position: absolute;
+	bottom: -38px;
+	left: 563px;
+	z-index: 999;
+	width: 73px;
+	height: 32px;
+	background: url(http://weixiaoxinpic.qiniudn.com/Public/2014/img/ga.png)
+		no-repeat 0 0;
+	cursor: pointer;
+}
+
+.soqilai {
+	position: absolute;
+	bottom: -14px;
+	left: 445px;
+	cursor: pointer;
+}
+
+  .use_b a:hover{
+        text-decoration:none;
+      }

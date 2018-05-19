@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 用户信息查询接口 -->
+	<bean name="queryUserInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserInfoServiceClientImpl"></bean>
+	
+	<!-- 发送短信加密 -->
+	<bean name="sendMessageService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.SendMessageServiceClientImpl"></bean>
+
+	<!-- 查询用户余额 -->
+	<bean name="queryOweFeeSimpleService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryOweFeeSimpleSpecialServiceClientImpl"></bean>
+	
+	<!-- 用户密码加密 -->
+	<bean name="doEncryptStrService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoEncryptStrServiceClientImpl"></bean>
+	
+	<!-- 用户密码修改 -->
+	<bean name="changePasswordService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.ChangePassWordServiceClientImpl"></bean>
+
+	<!-- 用户积分M值查询 -->
+	<bean name="queryCurrentConvertibleIntegralService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryCurrentConvertibleIntegralServiceClientImpl"></bean>
+	
+	<!-- 用户月度价值积分查询 -->
+	<bean name="queryMonthlyValueIntegralService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryMonthlyValueIntegralServiceClientImpl"></bean>
+	
+	<!-- 用户时段内扣减积分查询 -->
+	<bean name="queryTimeDeductionOfIntegralService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryTimeDeductionOfIntegralServiceClientImpl"></bean>
+	
+	<!-- 用户用户积分的月初与月末余额查询 -->
+	<bean name="queryUserCoinPeriodRecService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserCoinPeriodRecServiceClientImpl"></bean>
+	
+	<!-- 用户实时账单查询 -->
+	<bean name="queryRealMonthBillNewService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryRealMonthBillNewServiceClientImpl"></bean>
+
+	<!-- 用户历史账单查询 -->
+	<bean name="queryHistoryMonthBillNewService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryHistoryMonthBillNewServiceClientImpl"></bean>
+
+  
+
+	<!-- 已开通的套餐 -->
+	<bean name="queryUserPlanProdService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserPlanProdServiceClientImpl"></bean>
+	
+	<!-- 增值业务的查询 -->
+	<bean name="queryValueAddedServiceService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryValueAddedServiceServiceClinetImpl"></bean>
+	
+	<!-- 增值业务的退订 -->
+	<bean name="soAddValueServiceDelExService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.SoAddValueServiceDelExServiceClientImpl"></bean>
+	
+	<!-- 我参加的活动 -->
+	<bean name="queryUserActivitiesService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserActivitiesServiceClientImpl"></bean>
+	
+	<!-- 详单查询 -->
+	<bean name="queryDetailInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryDetailInfoServiceClientImpl"></bean>
+
+	<!-- 验证证件号码 -->
+	<bean name="verifyRegNbrService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.VerifyRegNbrServiceClientImpl"></bean>
+	
+
+     <!-- 套餐使用情况查询-->
+     <!-- 用户实际通讯量查询 -->
+	<bean name="queryFreeResourcesService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryFreeResourcesServiceClientImpl"></bean>
+	
+
+     <!-- 中心业务查询订购类 -->
+	<bean name="queryCenterBusinessStateService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryCenterBusinessStateServiceClientImpl"></bean>
+	
+	 <!-- 中心业务查询  注册类只针对港澳台流量包和139邮箱 -->
+	<bean name="queryRegCenterBusinessStateService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryRegCenterBusinessStateServiceClientImpl"></bean>
+
+     <!-- 查询用户业务状态 -->
+	<bean name="queryProdStateService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryProdStateServiceClientImpl"></bean>               
+    
+     <!-- 用户已有促销、程控判断业务状态查询 -->
+	<bean name="queryBusiStateService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryBusiStateServiceClientImpl"></bean>               
+    
+       <!-- 程控、促销业务办理 -->
+	<bean name="changeProdService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.ChangeProdServiceClientImpl"></bean>               
+    
+    
+     <!-- 查询当月GPRS流量 -->
+	<bean name="queryInternetTrafficDetailService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryInternetTrafficDetailServiceClientImpl"></bean>
+	
+	<!-- 查询用户简单信息汇总-->
+	<bean name="queryUserSimpleInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserSimpleInfoServiceClientImpl"></bean>
+     
+    <!-- 中心业务查询-->
+	<bean name="acceptCenterBusiService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.AcceptCenterBusiServiceClientImpl"></bean>
+             
+    <!-- PUK码查询 -->
+	<bean name="querySimCardService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QuerySimCardServiceClientImpl"></bean>
+	
+	<!-- 归属地码查询 -->
+	<bean name="queryPhoneAreaService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryPhoneAreaServiceClientImpl"></bean>
+	<!-- 用户V网信息查询 -->
+	<bean name="queryVNetworkService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryVNetworkServiceClientImpl"></bean>
+	
+	<!-- v网成员信息查询 -->
+	<bean name="queryVNetworkMemInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryVNetworkMemInfoServiceClientImpl"></bean>
+
+	<!--用户业务办理历史查询（SP业务） -->
+    <bean name="queryUserSPBusiHistoryService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserSPBusiHistoryServiceClientImpl"></bean>
+	
+	<!--用户业务办理历史查询（程控、促销、V网） -->
+    <bean name="queryUserBusiHistoryService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserBusiHistoryServiceClientImpl"></bean>
+	
+	<!--用户充值交费记录查询 -->
+    <bean name="queryPayCostHistoryService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryPayCostHistoryServiceClientImpl"></bean>
+	
+	<!--活动未划拨余额查询接口 -->
+    <bean name="queryUserActivitiesLastFeeService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserActivitiesLastFeeServiceClientImpl"></bean>
+	
+	<!-- 普通WLAN业务受理接口 -->
+	<bean name="doSoWlanService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoSoWlanServiceClientImpl"></bean>
+	
+	<!-- 呼叫转移业务办理接口 -->
+	<bean name="callForwardingService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.CallForwardingServiceClinetImpl"></bean>
+
+	<!-- 家庭成员添加 -->
+	<bean name="addVMemNewService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.AddVMemNewServiceClientImpl"></bean>
+	
+	<!-- 旧欢乐家庭添加 -->
+	<bean name="addVMemService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.AddVMemServiceClientImpl"/>
+	
+	<!-- 家庭成员删除 -->
+	<bean name="delVMemService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DelVMemServiceClientImpl"></bean>
+	
+	<!-- 创建家庭 -->
+	<bean name="soCreatVpmnGrpService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.SoCreatVpmnGrpServiceClientImpl"></bean>
+	
+	<!-- (新)创建家庭 -->
+	<bean name="newSoCreatVpmnGrpService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.NewSoCreatVpmnGrpServiceClientImpl"></bean>
+	
+	<!-- 家庭网套餐变更 -->
+	<bean name="doModVpmnFeeService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoModVpmnFeeServiceClientImpl"></bean>
+	
+	<!-- 查询用户可转套餐列表-->
+<!--	<bean name="queryCanAcceptPlanService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryCanAcceptPlanServiceClientImpl"></bean>-->
+	
+    <!-- 获取泛用户关系原有信息 -->
+    <bean name ="queryRelationService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryRelationServiceClientImpl"/>
+    
+    <!-- 验证可转套餐 -->
+    <bean name ="doValidateService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoValidateServiceClientImpl"/>
+	
+	<!-- 套餐互转-->
+	<bean name="changePlanService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.ChangePlanServiceClientImpl"></bean>
+	
+	<!-- 梦网开关办理-->
+	<bean name="doSoUserSwitchService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoSoUserSwitchServiceClientImpl"></bean>
+	
+	<!-- 梦网开关查询-->
+	<bean name="queryUserSwithInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserSwithInfoServiceClientImpl"></bean>
+
+	<!-- 停机保号-->
+	<bean name="openStopMsisdService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.OpenStopMsisdServiceClientImpl"></bean>
+	
+	<!-- 客户资料查询-->
+	<bean name="queryCustInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryCustInfoServiceClientImpl"></bean>
+	
+	<!-- 客户资料修改-->
+	<bean name="changeCustInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.ChangeCustInfoServiceForWapClientImpl"></bean>
+	<!-- 查询月结账单账户-->
+	<bean name = "queryAccStatAndSpFeeNewService" class = "com.xwtech.newecp.service.logic.client_impl.common.impl.QueryAccStatAndSpFeeNewServiceClientImpl"></bean>
+	
+	<!-- 查询用户已注册和订购的中心业务信息 -->
+	<bean name="queryUserCenterBusinessService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserCenterBusinessServiceClientImpl"></bean>
+		
+	<!-- 查询手机支付用户 -->
+	<bean name="queryMobilePayInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryMobilePayInfoServiceClientImpl"></bean>
+	<!-- 查询用户可参与用户抽奖的记录 -->
+	<bean name="queryAwardSummaryService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryAwardSummaryServiceClientImpl"></bean>
+	
+	<!--抽奖接口 -->
+	<bean name="getGiftLevelService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.GetGiftLevelServiceClientImpl"></bean>
+	
+	<!--查询特等奖数量 -->
+	<bean name="getMaxWonTopUserService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.GetMaxWonTopUserServiceClientImpl"></bean>
+	
+	<!--兑奖领奖二合一接口 -->
+	<bean name="addAwardDetailService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.AddAwardDetailServiceClientImpl"></bean>
+	
+	<!--查询用户领奖状态 -->
+	<bean name="queryAwardDetailService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryAwardDetailServiceClientImpl"></bean>
+	
+	<!-- 查询用户兑奖状态  -->
+	<bean name="queryUserGiftLevelService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserGiftLevelServiceClientImpl"></bean>
+	
+		
+	<!-- 查询用户积分计划  -->
+	<bean name="queryRealNameService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryRealNameServiceClientImpl"></bean>
+	
+		
+	<!-- 开通用户积分计划  -->
+	<bean name="doCoinPlanService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoCoinPlanServiceClientImpl"></bean>
+		
+	<!-- 1.26 开通手机支付接口（DEL100022） -->
+	<bean name="doMobilePayService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoMobilePayServiceClientImpl"></bean>
+	
+	
+	
+	<!-- 2.52 查询用户停开机状态（QRY300001） -->
+	<bean name="queryOpenAndStopStatusService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryOpenAndStopStatusServiceClientImpl"></bean>
+	
+    <!-- 1.16 用户活动受理数据检查(DEL200001) -->
+    <bean name="checkUserPromoCommonService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.CheckUserPromoCommonServiceClientImpl"/>
+    
+    <!-- 1.84 活动受理接口（DEL700049） -->
+    <bean name="doNewActivityService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.NewDoActivityServiceClientImpl"/>
+    
+    <!-- 1.85 活动受理接口（DEL700047） -->
+    <bean name="newChangePlanService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.NewChangePlanServiceClientImpl"/>
+    
+    <!-- 1.27 活动受理接口（DEL100023） -->
+    <bean name="doActivityService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoActivityServiceClientImpl"/>
+    
+    <!-- 2.82 判断用户是否可以办理村网（QRY700003） -->
+    <bean name="queryCanJoinCunNetService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryCanJoinCunNetServiceClientImpl"/>
+    
+    <!-- 2.83 村网查询（QRY700004） -->
+    <bean name="queryCunNetInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryCunNetInfoServiceClientImpl"/>
+    
+    <!-- 2.84 查询用户V网信息（QRY700005） -->
+    <bean name="queryVpmnInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryVpmnInfoServiceClientImpl"/>
+    
+    <!-- 2.85 短号查询（QRY700006） -->
+    <bean name="queryIsdnListService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryIsdnListServiceClientImpl"/>
+    
+    <!-- 1.3 村网信息变更（DEL700004） -->
+    <bean name="doModifyCunNetInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoModifyCunNetInfoServiceClientImpl"/>
+    
+    <!-- 1.4 村网群组成员添加（DEL700005） -->
+    <bean name="addVpmnMenService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.AddVpmnMenServiceClientImpl"/>
+    
+    <!-- 1.6 4G自选套餐计划转换（DEL700006） -->
+    <bean name="doChangePlanProductService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoChangePlanProductServiceClientImpl"/>
+    
+    <!-- 1.7 村网受理添加成员推荐有礼（DEL700007） -->
+    <bean name="addVpmnMenToRecommendService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.AddVpmnMenToRecommendServiceClientImpl"/>
+    
+    <!-- 2.54 查询营销计划详细信息（QRY300003） -->
+    <bean name="queryPlanDetailInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryPlanDetailInfoServiceClientImpl"/>
+    
+    <!-- 1.30 手机电子支付卷类活动办理（DEL100026） -->
+    <bean name="doActivityToMobilePayService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoActivityToMobilePayServiceClientImpl"/>
+    
+    <!-- 2.37 查询用户密码和安全标志（QRY100014） -->
+    <bean name="queryUserPasswordService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserPasswordServiceClientImpl"/>
+    
+    <!-- 1.9 国际漫游和国际长途订购接口（DEL700009） -->
+    <bean name="internOrderService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.InternOrderServiceClientImpl"/>
+    
+    <!-- 1.11 缴费接口（DEL700010） -->
+    <bean name="discountpayfeeService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DiscountpayfeeServiceClientImpl"/>
+    
+    <!-- ECP健康检查接口 -->
+    <bean name="checkUpService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.CheckUpServiceClientImpl"/>
+    
+    <!-- 7.50 获取用户可转计划(QRY700015) -->
+    <bean name="queryUserCanAcceptPlanService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserCanAcceptPlanServiceClientImpl"/>
+    
+    <!-- 2.11 活动查询统一接口（QRY020013） -->
+    <bean name="queryUserActivitiesFeeService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserActivitiesFeeServiceClientImpl"/>
+    
+    <!-- 7.55 活动查询新版接口（QRY700020） -->
+    <bean name="queryUserPromoActivityService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserPromoActivityServiceImpl"/>
+    
+    <!-- 1.34 登录用户信息 -->
+    <bean name="userLogininfo" class="com.xwtech.newecp.service.logic.client_impl.common.impl.LoginGetUserInfoServiceClientImpl"/>
+     
+    <!-- 用户星级查询  -->
+    <bean name="startgsService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryStarGsServiceClientImpl"/>
+     
+    <!-- 7.54 互联网账单接口（QRY700019） -->
+    <bean name="queryAccBillDailyService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryAccBillDailyServiceImpl"/>
+    
+    <!-- 7.17 查询产品订购信息（QRY500001） -->
+    <bean name="productOrderInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.ProductOrderInfoServiceClientImpl"/>
+    
+    <!-- 7.18 查询SP产品订购信息（QRY500002） -->
+    <bean name="querySPOrderInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QuerySPOrderInfoServiceClientImpl"/>
+    
+    <!-- 7.19 费用科目查询详单（QRY500003） -->
+    <bean name="queryDetailByFeeItemIDService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryDetailByFeeItemIDServiceClientImpl"/>
+    
+        <!-- 1.12	换卡接口  -->
+    <bean name="doSoChgSimElecChannelServiceClientImpl" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoSoChgSimElecChannelServiceClientImpl"/>
+
+ 	<!-- 7.53	判断是否允许开通4G程控功能(QRY700018)  -->
+    <bean name="checkUserLowCostSpromServiceClientImpl" class="com.xwtech.newecp.service.logic.client_impl.common.impl.CheckUserLowCostSpromServiceClientImpl"/>
+    
+    <!-- 7.56	账户下所有号码查询接口(QRY700021)  -->
+    <bean name="queryCustAccInfoServiceClientImpl" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryCustAccInfoServiceClientImpl"/>
+    
+    <!-- 7.61	校园v网信息查询（QRY700026）  -->
+    <bean name="queryGrpVpmnMapServiceClientImpl" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryGrpVpmnMapServiceClientImpl"/>
+   
+      <!-- 7.49	查询用户简单信息汇总新版（QRY700014）换卡接口需要  -->
+    <bean name="queryUserSimpleInfoNewServiceClientImpl" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserSimpleInfoNewServiceClientImpl"/>
+    
+    <!-- 7.57 判断是否宽带绑定用户（QRY700022） -->
+    <bean name="queryUserRelateSimpleService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserRelateSimpleServiceClientImpl"/>
+    
+    <!-- 7.58 宽带账单查询接口(QRY700023) -->
+    <bean name="queryMonthBillNewGsService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryMonthBillNewGsServiceClientImpl"/>
+    
+    <!-- 7.59 有线宽带订单查询接口（QRY700024） -->
+    <bean name="qryCmPreBroadbandService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QryCmPreBroadbandServiceClientImpl"/>
+    
+    <!-- 7.60 小区覆盖信息查询接口（QRY700025） -->
+    <bean name="qryCmPreCommunityService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QryCmPreCommunityServiceClientImpl"/>
+    
+    <!-- 7.63 用户简单信息查询（QRY700028） -->
+    <bean name="queryUserSimpleInfoBroadService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserSimpleInfoBroadServiceClientImpl"/>
+    
+    <!-- 1.16 宽带预约单创建接口（DEL700015） -->
+    <bean name="addCmPreBroadbandService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.AddCmPreBroadbandServiceClientImpl"/>
+    
+    <!-- 1.17 宽带预约单修改接口（DEL700016） -->
+    <bean name="editCmPreBroadandService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.EditCmPreBroadandServiceClientImpl"/>
+    
+    <!-- 1.18 删除宽带订单接口（DEL700017） -->
+    <bean name="undoCmPreBroadbandService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.UndoCmPreBroadbandServiceClientImpl"/>
+    
+    <!-- 1.19 宽带密码重置接口（DEL700018） -->
+    <bean name="resetPasswordService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.ResetPasswordServiceClientImpl"/>
+    
+     <!-- 流量安心包查询接口（QRY700039Result）-->
+    <bean name="queryRatResourceService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryRatResourceServiceClientImpl"/>
+    
+    <!-- 流量共享查询 2016-4-8 zhuhx -->
+	<bean name="queryFeeResourceUseDetailService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryFeeResourceUseDetailServiceClientImpl"></bean>
+	 <!-- 流量共享办理 2016-4-12 zhuhx -->
+	<bean name="soModShareMemService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.SoModShareMemServiceClientImpl"></bean>
+	<!-- 1.57	群组流量共享的开通及主号添加  2016-4-12 zhuhx -->
+	<bean name="soVpmnAndMemService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.SoVpmnAndMemServiceClientImpl"></bean>
+	<!-- 积分转增 -->
+	<bean name="transferUserCoinService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.TransferUserCoinServiceClientImpl"></bean>
+	
+	<!-- 交通秘书  2016-5-4 zhuhx start -->
+	<!-- 7.66	检验车牌接口 -->
+	<bean name="doVerifyVehicleService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoVerifyVehicleServiceClientImpl"></bean>
+	<!-- 7.67	检验驾照接口 -->
+	<bean name="doVerifyDriverService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoVerifyDriverServiceClientImpl"></bean>
+	<!-- 1.62	交通秘书订车牌业务 -->
+	<bean name="radiusAcceptVehicleService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.RadiusAcceptVehicleServiceClientImpl"></bean>
+	<!--1.63	交通秘书订驾照业务-->
+	<bean name="radiusAcceptDriverService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.RadiusAcceptDriverServiceClientImpl"></bean>
+	<!-- 交通秘书  end -->
+	
+	<!-- 流量直冲 -->
+	<bean name="doActivityFluxService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoActivityFluxServiceClientImpl"></bean>
+	
+	<!-- 积分撤单接口 -->
+	<bean name="soInfoCancelService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.SoInfoCancelServiceClientImpl"></bean>
+	
+	<!-- 6.77 共享流量查询（QRY700042） -->
+	<bean name="queryFeeResourceUseDetailNewService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryFeeResourceUseDetailNewServiceClientImpl"></bean>
+	
+	<!-- 串号查询接口 -->
+	<bean name="doTerminalOrderOperService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoTerminalOrderOperServiceClientImpl"></bean>
+
+        <!-- 用户计划产品信息查询(QRY700045) -->
+	<bean name="getUserPlanProdService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.GetUserPlanProdServiceClientImpl"></bean>
+	
+	<!-- 5G流量活动查询(DEL700031) -->
+	<bean name="checkUserPromoCommonFiveGBService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.CheckUserPromoCommonFiveGBServiceClientImpl"></bean>
+	
+	<!-- 实名制查询接口(QRY700043) -->
+	<bean name="queryRealNameInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryRealNameInfoServiceClientImpl"></bean>
+	
+	<!-- 积分扣减接口(DEL700012) -->
+	<bean name="deductUserCoinService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DeductUserCoinServiceClientImpl"></bean>
+	
+	<!-- 查询免费资源日数据(DEL700052) -->
+	<bean name="queryFreeResourcesDataService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryFreeResourcesDataServiceClientImpl"></bean>
+	 
+	<!-- 查询用户信息(QRY100006_2) -->
+	<bean name="queryUserInfoNoBossYJService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserInfoNoBossYJServiceClientImpl"></bean>
+	 
+	<!-- 1.27 活动受理接口新（DEL100023） -->
+	<bean name="doActivityServiceNew" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoActivityServiceNewClientImpl"></bean>
+	
+	<!-- 查询用户信息(QRY700069) -->
+	<bean name="queryUserInfoOrgService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserInfoOrgServiceClientImpl"></bean>
+	
+	<!-- 宽带业务标准地址查询(QRY700053) -->
+	<bean name="standardQueryService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.StandardQueryServiceClientImpl"></bean>
+	
+	<!-- 宽带业务标准地址查询(QRY700053) -->
+	<bean name="standardQueryByParentIdService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.StandardQueryByParentIdServiceClientImpl"></bean>
+	
+	<!-- 宽带资源查询（QRY700051） -->
+	<bean name="resQueryService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.ResQueryServiceClientImpl"></bean>
+	
+	<!-- 宽带资源预占接口（DEL700040） -->
+	<bean name="occupyProdSrvlnService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.OccupyProdSrvlnServiceClientImpl"></bean>
+	
+	<!-- 宽带资源预占释放接口（DEL700041） -->
+	<bean name="cancleoccupyProdSrvlnvService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.CancleoccupyProdSrvlnvServiceClientImpl"></bean> 
+	
+	<!-- 有线宽带新装预约（DEL700039）-->
+	<bean name="doNewAcceptUnitService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoNewAcceptUnitServiceClientImpl"></bean> 
+	
+	<!-- 积分兑换应急库（QRY70054）-->
+	<bean name="queryIntegralConvertService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryIntegralConvertServiceServiceClientImpl"></bean> 
+	<!-- 选号接口（QRY600001） -->
+	<bean name ="queryPhoneNumService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryPhoneNumServiceClientImpl"></bean> 
+	<!-- 号码预占（DEL100015） -->
+	<bean name ="doCustBookInfoCheckService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoCustBookInfoCheckServiceClientImpl"></bean> 	
+	
+	<!-- 根据手机号啊查询对应身份证下所有号码应急库（QRY700074）-->
+	<bean name="queryPhoneNumInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryPhoneNumInfoServiceClientImpl"></bean> 
+	
+	<!-- 实时话费查询（QRY200001）-->
+	<bean name="queryUserRealTimeFeeService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserRealTimeFeeServiceClientImpl"></bean> 
+	
+	<!-- 一证五号接口 省内（DEL001006）-->
+	<bean name="doCheckOneCardFiveNumsService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoCheckOneCardFiveNumsServiceClientImpl"></bean> 
+	
+	<!-- 一证五号接口 集团（DEL001007）-->
+	<bean name="qwcxIdCheckService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QwcxIdCheckServiceClientImpl"></bean> 
+	
+	<!-- 黑名单校验接口（DEL001008）-->
+	<bean name="doCheckBlkService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoCheckBlkServiceClientImpl"></bean> 
+	
+	<!-- 实名制查验接口（DEL001009）-->
+	<bean name="doRealityVerifyService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoRealityVerifyServiceClientImpl"></bean> 	
+	
+	<!-- 订单同步接口（DEL001010）-->
+	<bean name="delnumPresaleCardOrderService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.SelnumPresaleCardOrderServiceClientImpl"></bean> 	
+	
+	<!-- 终端串号状态查询接口（QRY700030）-->
+	<bean name="queryEqptInfoService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryEqptInfoServiceClientImpl"></bean> 	
+	
+	<!-- 有线宽带新装预约（DEL700052）-->
+	<bean name="doBroadNewAcceptUnitService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoBroadNewAcceptUnitServiceClientImpl"></bean> 	
+	
+	<!-- 收现类充值活动接口（DEL700051）-->
+	<bean name="doSoUserPromoCashService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.DoSoUserPromoCashServiceClientImpl"></bean>
+	
+	<!-- 活动受理接口（DES100001）-->
+	<bean name="doActivityNewService" class="com.xwtech.newecp.json.logic.client_impl.common.impl.DoActivityServiceClientImpl"></bean>
+	
+	<!-- 产品受理接口（DES100002）-->
+	<bean name="changeNewProdService" class="com.xwtech.newecp.json.logic.client_impl.common.impl.ChangeProdServiceClientImpl"></bean>
+	
+	<!-- 活动查询接口（QRS100001）-->
+	<bean name="queryNewUserPromoActivityService" class="com.xwtech.newecp.json.logic.client_impl.common.impl.QueryUserPromoActivityServiceImpl"></bean>
+	
+	<!-- 积分倍享（QRY700073Result）-->
+	<bean name="queryIntegralDoubleReceiveService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryIntegralDoubleReceiveServiceClientImpl"></bean> 
+
+	<!-- 刷新缓存（QRY700077）-->
+	<bean name="refreshCacheService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.RefreshCacheServiceClientImpl"></bean> 
+
+	<!-- 判断用户是否为异常用户 -->
+	<bean name="IQueryUserInfoCmService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.QueryUserInfoCmServiceClientImpl "></bean> 
+	
+	<!-- 新活动办理接口 (DEL700049) -->
+	<bean name="newDoActService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.NewDoActivityServiceClientImpl"></bean>
+	
+	<!-- 程控,促销办理接口 (DEL700046) -->
+	<bean name="newChangeProdService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.NewChangeProdServiceClientImpl"></bean>
+	
+	<!-- ecp号码查询接口 -->
+	<bean name ="getPhoneNumService" class="com.xwtech.newecp.service.logic.client_impl.common.impl.GetPhoneNumServiceClientImpl"></bean> 
+</beans>

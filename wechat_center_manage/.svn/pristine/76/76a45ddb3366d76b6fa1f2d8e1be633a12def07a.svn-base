@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wechat.cs.modules.sys.dao.login.UserMapper">
+	<!-- 权限字段sql片段 -->
+	<sql id="permissionId">
+		su.username,
+		sr.name AS "roleName",
+		sm.name AS "menuName",
+		sm.permission,
+		sm.url,
+		sm.type,
+		sm.parent_id
+	</sql>
+	<!-- 权限关联查询sql片段 -->
+	<sql id="joinId">
+		LEFT JOIN
+			sys_user_role sur
+		ON
+			su.id = sur.user_id
+		LEFT JOIN
+			sys_role sr
+		ON
+			sur.role_id = sr.id
+		LEFT JOIN
+			sys_role_menu srm
+		on
+			sr.id = srm.role_id
+		LEFT JOIN
+			sys_menu sm
+		ON
+			srm.menu_id = sm.id
+	</sql>
+	<!-- 修改用户信息 -->
+    <update id="updateUserInfoByUsername" parameterType="string">
+		UPDATE
+			sys_user
+		SET
+			password = #{password}
+		WHERE
+			username = #{username}
+	</update>
+	<delete id="delUser" parameterType="string">
+		UPDATE
+			sys_user
+		<set>
+			status = '0'
+		</set>
+		WHERE
+			username = #{username}
+	</delete>
+	<delete id="deleteSerial" parameterType="list">
+		UPDATE
+		sys_user
+		<set>
+			status = '0'
+		</set>
+		WHERE
+			username
+		IN
+		<foreach collection="userList" open="(" close=")" separator="," item="username">
+			#{username}
+		</foreach>
+	</delete>
+
+	<!-- 根据用户名查询用户信息-->
+	<select id="findByUsername" parameterType="string" resultType="com.wechat.cs.modules.sys.entity.login.UserInfoBean">
+		SELECT
+			id, username, password, realname, email, phone, status, create_by, create_date, remarks
+		FROM
+			sys_user
+		WHERE
+			username = #{username}
+		AND
+			status = '1'
+	</select>
+	<!-- 根据用户信息查询用户权限信息, 查询一级菜单-->
+	<select id="findPermissionsByusername" parameterType="string" resultType="java.util.Map">
+		SELECT
+			<include refid="permissionId"/>
+		FROM
+			sys_user su
+			<include refid="joinId"/>
+		WHERE
+			su.username = #{username}
+		AND
+			su.status = '1'
+		AND
+			sr.status = '1'
+		AND
+			sm.status = '1'
+		AND
+			sm.type = '1'
+		ORDER BY
+			sm.sort
+	</select>
+	<!-- 查询子菜单 -->
+	<select id="findMenusByusername" parameterType="string" resultType="java.util.Map">
+		SELECT
+		<include refid="permissionId"/>
+		FROM
+		sys_user su
+		<include refid="joinId"/>
+		WHERE
+			su.username = #{username}
+		AND
+			su.status = '1'
+		AND
+			sr.status = '1'
+		AND
+			sm.status = '1'
+		AND
+			sm.parent_id = #{parentId}
+		AND
+			sm.type = '2'
+		ORDER BY
+		sm.sort
+	</select>
+	<!-- 查询所有的用户信息 -->
+    <select id="findAllUser" resultType="java.util.Map" parameterType="map">
+		SELECT
+			username, realname, email, phone, CASE  WHEN su.status = '1' THEN '启用' ELSE '禁用' END AS status,
+			su.create_by, su.create_date, su.remarks, sr.name
+		FROM
+			sys_user su
+		LEFT JOIN
+			sys_user_role sur
+		ON
+			su.id = sur.user_id
+		LEFT JOIN
+			sys_role sr
+		ON
+			sur.role_id = sr.id
+		<where>
+			<if test="username != null and username != '' ">
+				su.username = #{username}
+			</if>
+		</where>
+	</select>
+</mapper>

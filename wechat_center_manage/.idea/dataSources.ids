@@ -1,0 +1,3057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - wechat_center_manage@135.140.39.100" uuid="48c49185-9f90-4aab-8c24-dcdcc6566d85">
+    <database-info product="MySQL" version="5.7.16-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="wechat_center_manage">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <schema id="5" name="sys"/>
+      <schema id="6" name="wechat_message"/>
+      <table id="7" parent="1" name="bind"/>
+      <table id="8" parent="1" name="sys_menu"/>
+      <table id="9" parent="1" name="sys_role">
+        <comment>角色表</comment>
+      </table>
+      <table id="10" parent="1" name="sys_role_menu">
+        <comment>角色-菜单</comment>
+      </table>
+      <table id="11" parent="1" name="sys_user"/>
+      <table id="12" parent="1" name="sys_user_role">
+        <comment>用户-角色</comment>
+      </table>
+      <table id="13" parent="1" name="t_area_code"/>
+      <table id="14" parent="1" name="t_bt_deal_postmsg_log"/>
+      <table id="15" parent="1" name="t_bt_deal_postmsg_log_copy"/>
+      <table id="16" parent="1" name="t_bt_df"/>
+      <table id="17" parent="1" name="t_bt_jftxinfo"/>
+      <table id="18" parent="1" name="t_bt_mass_material"/>
+      <table id="19" parent="1" name="t_bt_mass_result"/>
+      <table id="20" parent="1" name="t_bt_material_image"/>
+      <table id="21" parent="1" name="t_bt_material_news"/>
+      <table id="22" parent="1" name="t_bt_material_text"/>
+      <table id="23" parent="1" name="t_bt_mbyh"/>
+      <table id="24" parent="1" name="t_bt_p_log">
+        <comment>ç‚¹èµžæ—¥å¿—</comment>
+      </table>
+      <table id="25" parent="1" name="t_bt_p_log_page"/>
+      <table id="26" parent="1" name="t_bt_p_user">
+        <comment>å&#x8f;‚èµ›ç”¨æˆ·</comment>
+      </table>
+      <table id="27" parent="1" name="t_bt_phd"/>
+      <table id="28" parent="1" name="t_bt_post_msg"/>
+      <table id="29" parent="1" name="t_bt_poster_info"/>
+      <table id="30" parent="1" name="t_bt_public_info"/>
+      <table id="31" parent="1" name="t_bt_public_menu_info"/>
+      <table id="32" parent="1" name="t_bt_qf_user_info"/>
+      <table id="33" parent="1" name="t_bt_qfactivity_user_info"/>
+      <table id="34" parent="1" name="t_bt_qfactivityinfo"/>
+      <table id="35" parent="1" name="t_bt_qfinfo"/>
+      <table id="36" parent="1" name="t_bt_qxyh"/>
+      <table id="37" parent="1" name="t_bt_reply_info"/>
+      <table id="38" parent="1" name="t_bt_sendmsg_template"/>
+      <table id="39" parent="1" name="t_bt_shop_info"/>
+      <table id="40" parent="1" name="t_bt_sys_user"/>
+      <table id="41" parent="1" name="t_bt_template_msg"/>
+      <table id="42" parent="1" name="t_bt_templatemsg_instance"/>
+      <table id="43" parent="1" name="t_bt_templatemsg_log"/>
+      <table id="44" parent="1" name="t_bt_templatemsg_testphone"/>
+      <table id="45" parent="1" name="t_bt_ticketjifenlog"/>
+      <table id="46" parent="1" name="t_bt_ticketlog"/>
+      <table id="47" parent="1" name="t_bt_ticketnumber"/>
+      <table id="48" parent="1" name="t_bt_twocode_share_info"/>
+      <table id="49" parent="1" name="t_bt_txinfo"/>
+      <table id="50" parent="1" name="t_bt_user_bd_log"/>
+      <table id="51" parent="1" name="t_bt_user_group"/>
+      <table id="52" parent="1" name="t_bt_user_info"/>
+      <table id="53" parent="1" name="t_bt_user_memberno"/>
+      <table id="54" parent="1" name="t_bt_v_1422_user_info"/>
+      <table id="55" parent="1" name="t_bt_v_blacklist"/>
+      <table id="56" parent="1" name="t_bt_v_dzp_activity"/>
+      <table id="57" parent="1" name="t_bt_v_dzp_luckdraw_log"/>
+      <table id="58" parent="1" name="t_bt_v_dzp_play_userinfo"/>
+      <table id="59" parent="1" name="t_bt_v_dzp_prize"/>
+      <table id="60" parent="1" name="t_bt_v_dzpts_t_info"/>
+      <table id="61" parent="1" name="t_bt_v_dzpts_winning_logs"/>
+      <table id="62" parent="1" name="t_bt_v_ggj_activity"/>
+      <table id="63" parent="1" name="t_bt_v_ggj_luckdraw_log"/>
+      <table id="64" parent="1" name="t_bt_v_ggj_play_userinfo"/>
+      <table id="65" parent="1" name="t_bt_v_ggj_prize"/>
+      <table id="66" parent="1" name="t_bt_v_ggj_temwinn_log"/>
+      <table id="67" parent="1" name="t_bt_v_llhb_fhb"/>
+      <table id="68" parent="1" name="t_bt_v_llhb_llzy"/>
+      <table id="69" parent="1" name="t_bt_v_llhb_llzy_log"/>
+      <table id="70" parent="1" name="t_bt_v_llhb_qhb"/>
+      <table id="71" parent="1" name="t_bt_v_luckplay_logs"/>
+      <table id="72" parent="1" name="t_bt_v_mbyh"/>
+      <table id="73" parent="1" name="t_bt_v_tem_msg_logs"/>
+      <table id="74" parent="1" name="t_bt_v_temmsg_test_target"/>
+      <table id="75" parent="1" name="t_bt_v_wjdc_naire"/>
+      <table id="76" parent="1" name="t_bt_v_wjdc_option"/>
+      <table id="77" parent="1" name="t_bt_v_wjdc_question"/>
+      <table id="78" parent="1" name="t_bt_v_wjdc_reply"/>
+      <table id="79" parent="1" name="t_bt_v_wjdc_user_log"/>
+      <table id="80" parent="1" name="t_bt_v_wjdc_w_test"/>
+      <table id="81" parent="1" name="t_bt_v_wjdc_white_list"/>
+      <table id="82" parent="1" name="t_bt_v_wxcz_user_log"/>
+      <table id="83" parent="1" name="t_bt_v_yyy_activity"/>
+      <table id="84" parent="1" name="t_bt_v_yyy_luckdraw_log"/>
+      <table id="85" parent="1" name="t_bt_v_yyy_play_userinfo"/>
+      <table id="86" parent="1" name="t_bt_v_yyy_prize"/>
+      <table id="87" parent="1" name="t_bt_v_zjd_activity"/>
+      <table id="88" parent="1" name="t_bt_v_zjd_cash_code"/>
+      <table id="89" parent="1" name="t_bt_v_zjd_luckdraw_log"/>
+      <table id="90" parent="1" name="t_bt_v_zjd_nowinn_logs"/>
+      <table id="91" parent="1" name="t_bt_v_zjd_play_userinfo"/>
+      <table id="92" parent="1" name="t_bt_v_zjd_prize"/>
+      <table id="93" parent="1" name="t_bt_wbhflow"/>
+      <table id="94" parent="1" name="t_bt_wjdc_user_log"/>
+      <table id="95" parent="1" name="t_bt_wjdc_white_list"/>
+      <table id="96" parent="1" name="t_bt_y_hb_buy_log"/>
+      <table id="97" parent="1" name="t_bt_y_hb_exchange_log"/>
+      <table id="98" parent="1" name="t_bt_y_hb_info"/>
+      <table id="99" parent="1" name="t_bt_y_hb_log"/>
+      <table id="100" parent="1" name="t_bt_y_hb_user_info"/>
+      <table id="101" parent="1" name="t_gzyl_log"/>
+      <table id="102" parent="1" name="t_wc_cd_auth_push">
+        <comment>领取卡券授权信息推送</comment>
+      </table>
+      <table id="103" parent="1" name="t_wc_cd_insert_record">
+        <comment>用户电子发票插卡包记录</comment>
+      </table>
+      <table id="104" parent="1" name="t_wc_cd_pdf_up_log">
+        <comment>电子发票pdf文件上传记录表</comment>
+      </table>
+      <table id="105" parent="1" name="t_wc_cd_set_info">
+        <comment>公众号电子发票相关配置信息</comment>
+      </table>
+      <table id="106" parent="1" name="temporary_t"/>
+      <table id="107" parent="1" name="test"/>
+      <column id="108" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="109" parent="7" name="phonenum">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="110" parent="7" name="openid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="111" parent="7" name="datetime">
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+        <default-expression>CURRENT_TIMESTAMP</default-expression>
+      </column>
+      <column id="112" parent="7" name="passwd">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="113" parent="7" name="area">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="114" parent="7" name="attname">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="115" parent="7" name="attcode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <index id="116" parent="7" name="bindindex">
+        <columns>openid
+phonenum</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="117" parent="7" name="bindindex2">
+        <columns>phonenum</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="118" parent="7" name="bindindex3">
+        <columns>openid
+area</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="119" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="120" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="121" parent="8" name="name">
+        <comment>资源路径</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="122" parent="8" name="type">
+        <comment>资源类型</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="123" parent="8" name="url">
+        <comment>点击后前往的地址</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="124" parent="8" name="parent_id">
+        <comment>父编号</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="125" parent="8" name="parent_ids">
+        <comment>父编号列表</comment>
+        <data-type>varchar(1000)|0</data-type>
+      </column>
+      <column id="126" parent="8" name="permission">
+        <comment>权限字符串</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="127" parent="8" name="status">
+        <comment>是否显示</comment>
+        <data-type>char(1)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="128" parent="8" name="sort">
+        <comment>排序</comment>
+        <data-type>int(5)|0</data-type>
+      </column>
+      <column id="129" parent="8" name="menu_icon">
+        <comment>图标</comment>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="130" parent="8" name="remarks">
+        <comment>摘要</comment>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="131" parent="8" name="create_by">
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="132" parent="8" name="create_date">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="133" parent="8" name="update_by">
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="134" parent="8" name="update_date">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="135" parent="8" name="del_flag">
+        <data-type>char(1)|0</data-type>
+      </column>
+      <index id="136" parent="8" name="idx_sys_resource_parent_id">
+        <columns>parent_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="137" parent="8" name="idx_sys_resource_parent_ids">
+        <columns>parent_ids</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="138" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="139" parent="9" name="id">
+        <comment>编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)|0</data-type>
+      </column>
+      <column id="140" parent="9" name="name">
+        <comment>角色名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="141" parent="9" name="code">
+        <comment>英文名称</comment>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="142" parent="9" name="is_sys">
+        <comment>是否系统数据</comment>
+        <data-type>varchar(64)|0</data-type>
+      </column>
+      <column id="143" parent="9" name="status">
+        <data-type>char(1)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="144" parent="9" name="create_by">
+        <comment>创建者</comment>
+        <data-type>varchar(64)|0</data-type>
+      </column>
+      <column id="145" parent="9" name="create_date">
+        <comment>创建时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="146" parent="9" name="update_by">
+        <comment>更新者</comment>
+        <data-type>varchar(64)|0</data-type>
+      </column>
+      <column id="147" parent="9" name="update_date">
+        <comment>更新时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="148" parent="9" name="remarks">
+        <comment>备注信息</comment>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="149" parent="9" name="del_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(1)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <index id="150" parent="9" name="sys_role_del_flag">
+        <columns>del_flag</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="151" parent="9" name="sys_role_enname">
+        <columns>code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="152" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="153" parent="10" name="id">
+        <comment>编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="154" parent="10" name="menu_id">
+        <comment>菜单编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="155" parent="10" name="role_id">
+        <comment>角色编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <index id="156" parent="10" name="sys_role_menu_menuid">
+        <columns>menu_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="157" parent="10" name="sys_role_menu_roleid">
+        <columns>role_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="158" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="159" parent="11" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="160" parent="11" name="realname">
+        <comment>真实名称</comment>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="161" parent="11" name="username">
+        <comment>用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="162" parent="11" name="password">
+        <comment>密码</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="163" parent="11" name="email">
+        <comment>邮件</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="164" parent="11" name="phone">
+        <comment>联系电话</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="165" parent="11" name="status">
+        <data-type>char(1)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="166" parent="11" name="create_by">
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="167" parent="11" name="create_date">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="168" parent="11" name="update_by">
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="169" parent="11" name="update_date">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="170" parent="11" name="remarks">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <index id="171" parent="11" name="idx_sys_user_email">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="172" parent="11" name="idx_sys_user_phone">
+        <columns>phone</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="173" parent="11" name="idx_sys_user_username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="174" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="175" parent="11" name="idx_sys_user_username">
+        <columns>username</columns>
+        <underlying-index>idx_sys_user_username</underlying-index>
+      </key>
+      <key id="176" parent="11" name="idx_sys_user_email">
+        <columns>email</columns>
+        <underlying-index>idx_sys_user_email</underlying-index>
+      </key>
+      <key id="177" parent="11" name="idx_sys_user_phone">
+        <columns>phone</columns>
+        <underlying-index>idx_sys_user_phone</underlying-index>
+      </key>
+      <column id="178" parent="12" name="id">
+        <comment>编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="179" parent="12" name="user_id">
+        <comment>用户编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="180" parent="12" name="role_id">
+        <comment>角色编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <index id="181" parent="12" name="sys_user_role_roleid">
+        <columns>role_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="182" parent="12" name="sys_user_role_userid">
+        <columns>user_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="183" parent="12" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="184" parent="13" name="regioncode">
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="185" parent="13" name="bosscode">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="186" parent="14" name="wpname">
+        <comment>å…¬ä¼—å&#x8f;·</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="187" parent="14" name="templateid">
+        <comment>æ¨¡æ&#x9d;¿ID</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="188" parent="14" name="requestid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="189" parent="14" name="logtime">
+        <comment>æ—¥å¿—æ—¶é—´</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="190" parent="15" name="wpname">
+        <comment>å…¬ä¼—å&#x8f;·</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="191" parent="15" name="templateid">
+        <comment>æ¨¡æ&#x9d;¿ID</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="192" parent="15" name="requestid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="193" parent="15" name="logtime">
+        <comment>æ—¥å¿—æ—¶é—´</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="194" parent="16" name="phonenum">
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="195" parent="17" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="196" parent="17" name="timestamp">
+        <comment>时间戳</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="197" parent="17" name="phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="198" parent="17" name="jfyx">
+        <comment>有效积分</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="199" parent="17" name="sfyxjf">
+        <comment>积分是否失效</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="200" parent="17" name="jfsx">
+        <comment>失效积分</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="201" parent="17" name="sxdatetime">
+        <comment>失效日期</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="202" parent="17" name="inserttime">
+        <comment>插入类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="203" parent="17" name="tstype">
+        <comment>推送类型</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="204" parent="17" name="ctype">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <key id="205" parent="17" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="206" parent="18" name="massid">
+        <comment>ä¸»é”®</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="207" parent="18" name="mediaid">
+        <comment>ç´ æ&#x9d;&#x90;å›¾æ–‡mediaid</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="208" parent="18" name="materialids">
+        <comment>ç´ æ&#x9d;&#x90;idï¼Œç«–çº¿åˆ†å‰²</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="209" parent="18" name="massstate">
+        <comment>å&#x8f;‘é€&#x81;çŠ¶æ€&#x81;</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="210" parent="18" name="masstime">
+        <comment>å&#x8f;‘é€&#x81;æ—¶é—´</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="211" parent="18" name="masstype">
+        <comment>ç¾¤å&#x8f;‘ç±»åž‹text,image,mpnews</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="212" parent="18" name="pname">
+        <comment>å…¬ä¼—å&#x8f;·å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="213" parent="18" name="msgid">
+        <comment>ç¾¤å&#x8f;‘æ¶ˆæ&#x81;¯ID</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="214" parent="19" name="resultid">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="215" parent="19" name="totalcount">
+        <comment>æ€»æ&#x9d;¡æ•°</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="216" parent="19" name="filtercount">
+        <comment>FilterCount = SentCount + ErrorCount</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="217" parent="19" name="sentcount">
+        <comment>å&#x8f;‘é€&#x81;æˆ&#x90;åŠŸçš„ç²‰ä¸&#x9d;æ•°</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="218" parent="19" name="errorcount">
+        <comment>å&#x8f;‘é€&#x81;å¤±è´¥çš„ç²‰ä¸&#x9d;æ•°</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="219" parent="19" name="status">
+        <comment>ç¾¤å&#x8f;‘çš„ç»“æž„</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="220" parent="19" name="msgid">
+        <comment>ç¾¤å&#x8f;‘ç´ æ&#x9d;&#x90;Id</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="221" parent="20" name="id">
+        <comment>å›¾ç‰‡ç´ æ&#x9d;&#x90;è¡¨ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="222" parent="20" name="pname">
+        <comment>å…¬ä¼—å&#x8f;·å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="223" parent="20" name="imagename">
+        <comment>å›¾ç‰‡å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="224" parent="20" name="imageid">
+        <comment>å›¾ç‰‡id</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="225" parent="20" name="imagepath">
+        <comment>å›¾ç‰‡è·¯å¾„</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="226" parent="20" name="imagemediaid">
+        <comment>ç¾¤å&#x8f;‘æ—¶è°ƒç”¨</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="227" parent="20" name="imagesize">
+        <comment>å›¾ç‰‡å¤§å°&#x8f;</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <key id="228" parent="20" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="229" parent="21" name="id">
+        <comment>å›¾æ–‡ç´ æ&#x9d;&#x90;è¡¨ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="230" parent="21" name="pname">
+        <comment>å…¬ä¼—å&#x8f;·å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="231" parent="21" name="newstitle">
+        <comment>æ ‡é¢˜</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="232" parent="21" name="newsauthor">
+        <comment>ä½œè€…</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="233" parent="21" name="newscover">
+        <comment>å°&#x81;é&#x9d;¢å›¾ç‰‡</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="234" parent="21" name="newsdes">
+        <comment>æ‘˜è¦&#x81;</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="235" parent="21" name="newscontent">
+        <comment>æ­£æ–‡</comment>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="236" parent="21" name="newslink">
+        <comment>åŽŸæ–‡é“¾æŽ¥</comment>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="237" parent="21" name="newspicurl">
+        <comment>å›¾ç‰‡é“¾æŽ¥</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="238" parent="21" name="newsid">
+        <comment>å›¾æ–‡IDï¼Œé»˜è®¤ä¸º1ï¼Œå€¼ä¸º1æ—¶æ•°æ&#x8d;®ä¸&#x8d;å&#x8f;¯ç”¨</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="239" parent="21" name="newstime">
+        <comment>å›¾æ–‡åˆ›å»ºæ—¶é—´</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="240" parent="21" name="newstype">
+        <comment>å›¾æ–‡ç±»åž‹ï¼Œé»˜è®¤1å&#x8d;•å›¾æ–‡ï¼Œ2å¤šå›¾æ–‡</comment>
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="241" parent="21" name="newsmediaid">
+        <comment>ç”¨äºŽç¾¤å&#x8f;‘æ—¶å&#x8f;‚æ•°</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="242" parent="21" name="newscovershow">
+        <comment>æ˜¯å&#x90;¦æ˜¾ç¤ºå°&#x81;é&#x9d;¢ï¼Œ1ï¼štrue,0:false</comment>
+        <data-type>varchar(2)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="243" parent="21" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="244" parent="22" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="245" parent="22" name="pname">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="246" parent="22" name="content">
+        <data-type>varchar(1200)|0</data-type>
+      </column>
+      <key id="247" parent="22" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="248" parent="23" name="telphone">
+        <comment>模板消息发送用户电话号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="249" parent="24" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="250" parent="24" name="pcode">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="251" parent="24" name="logtime">
+        <comment>20160120231022 æ—¶é—´</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="252" parent="24" name="logday">
+        <comment>20160120 æ—¥æœŸ</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="253" parent="25" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="254" parent="25" name="logtype">
+        <comment>ç±»åž‹ï¼š1ï¼Œé¢†å&#x8f;–ä¼˜æƒ åˆ¸ç»Ÿè®¡ï¼›</comment>
+        <data-type>int(2)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="255" parent="25" name="logtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="256" parent="26" name="pcode">
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="257" parent="26" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="258" parent="26" name="pname">
+        <comment>å§“å&#x90;&#x8d;</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="259" parent="26" name="psex">
+        <comment>æ€§åˆ« 1ï¼šç”· ï¼Œ2ï¼šå¥³</comment>
+        <data-type>int(2)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="260" parent="26" name="page">
+        <comment>å¹´é¾„</comment>
+        <data-type>varchar(5)|0</data-type>
+      </column>
+      <column id="261" parent="26" name="pschool">
+        <comment>æ‰€åœ¨å­¦æ ¡</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="262" parent="26" name="ptelphone">
+        <comment>æ‰‹æœºå&#x8f;·ç &#x81;</comment>
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="263" parent="26" name="pcontent">
+        <comment>ç»˜ç”»æ&#x8f;&#x8f;è¿°</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="264" parent="26" name="picurl">
+        <comment>å&#x8f;‚èµ›å›¾ç‰‡åœ°å&#x9d;€</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="265" parent="26" name="pstatus">
+        <comment>å®¡æ ¸çŠ¶æ€&#x81;ï¼š0 æœªå®¡æ ¸ï¼Œ1 å·²å®¡æ ¸ï¼Œ2 å®¡æ ¸æœªé€šè¿‡</comment>
+        <data-type>int(2)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="266" parent="26" name="ptime">
+        <comment>å&#x8f;‚èµ›æ—¶é—´</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="267" parent="26" name="pistop">
+        <comment>0:false, 1:true æ˜¯å&#x90;¦çœŸå®žæ•°æ&#x8d;®</comment>
+        <data-type>int(2)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="268" parent="26" name="PRIMARY">
+        <columns>pcode</columns>
+        <primary>1</primary>
+      </key>
+      <column id="269" parent="27" name="phonestart">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="270" parent="28" name="openid">
+        <comment>ç”¨æˆ·idï¼Œå…³è&#x81;”ç”¨æˆ·è¡¨</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="271" parent="28" name="pid">
+        <comment>å…¬ä¼—å&#x8f;·idï¼Œå…³è&#x81;”å…¬ä¼—å&#x8f;·è¡¨</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="272" parent="28" name="createtime">
+        <comment>æ—¶é—´</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="273" parent="28" name="msgtype">
+        <comment>ç±»åž‹</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="274" parent="28" name="msgcontent">
+        <comment>å†…å®¹</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="275" parent="28" name="msgid">
+        <comment>æ¶ˆæ&#x81;¯id</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="276" parent="28" name="remsg">
+        <comment>å›žå¤&#x8d;æ¶ˆæ&#x81;¯èƒ½å®¹</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="277" parent="28" name="remsgstate">
+        <comment>æ˜¯å&#x90;¦å›žå¤&#x8d;ï¼š0é»˜è®¤ï¼Œ1å›žå¤&#x8d;</comment>
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="278" parent="28" name="remsgtime">
+        <comment>å›žå¤&#x8d;æ—¶é—´</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="279" parent="29" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="280" parent="29" name="wpname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="281" parent="29" name="openid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="282" parent="29" name="userphone">
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="283" parent="29" name="activitynum">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="284" parent="29" name="vipnum">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="285" parent="29" name="foddername">
+        <mandatory>1</mandatory>
+        <data-type>varchar(70)|0</data-type>
+      </column>
+      <column id="286" parent="29" name="fodderdatedtime">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="287" parent="29" name="twocodedatedtime">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="288" parent="29" name="createtime">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="289" parent="29" name="media_id">
+        <data-type>varchar(80)|0</data-type>
+      </column>
+      <index id="290" parent="29" name="poster_openid">
+        <columns>openid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="291" parent="29" name="poster_vipnum">
+        <columns>vipnum</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="292" parent="29" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="293" parent="30" name="pname">
+        <comment>å…¬ä¼—å&#x8f;·å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="294" parent="30" name="pid">
+        <comment>å…¬ä¼—å&#x8f;·åŽŸå§‹id</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="295" parent="30" name="paccount">
+        <comment>å¾®ä¿¡å&#x8f;·</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="296" parent="30" name="pappid">
+        <comment>å¤´åƒ&#x8f;ï¼ˆæ­¤å¤„å&#x8f;ªè®°å½•å›¾ç‰‡å&#x90;&#x8d;ç§°ï¼‰</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="297" parent="30" name="psecret">
+        <comment>ä»‹ç»&#x8d;</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="298" parent="30" name="pfigureurl">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="299" parent="30" name="pintroducecontent">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="300" parent="30" name="ptype">
+        <comment>å…¬ä¼—å&#x8f;·ç±»åž‹0ï¼šè®¢é˜…å&#x8f;·ï¼Œ1ï¼šå…¬ä¼—å&#x8f;·</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="301" parent="30" name="pcertype">
+        <comment>è®¤è¯&#x81;ç±»åž‹0ï¼šå·²è®¤è¯&#x81;ï¼Œ1ï¼šæœªè®¤è¯&#x81;</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="302" parent="30" name="premark">
+        <comment>ä¼&#x81;ä¸šç®€è¦&#x81;è¯´æ˜Žä¿¡æ&#x81;¯</comment>
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="303" parent="30" name="ptoken">
+        <comment>ç³»ç»Ÿç”Ÿæˆ&#x90;</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="304" parent="30" name="pkey">
+        <data-type>varchar(150)|0</data-type>
+      </column>
+      <column id="305" parent="30" name="psysaccount">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="306" parent="30" name="paddtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="307" parent="30" name="psourceip">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="308" parent="31" name="pname">
+        <comment>å…¬ä¼—å&#x8f;·å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="309" parent="31" name="menuname">
+        <comment>è&#x8f;œå&#x8d;•å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="310" parent="31" name="menulevel">
+        <comment>çº§åˆ«ï¼ˆ1ï¼šä¸€çº§è&#x8f;œå&#x8d;•ï¼Œ2ï¼šäºŒçº§è&#x8f;œå&#x8d;•ï¼‰</comment>
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="311" parent="31" name="menutype">
+        <comment>è&#x8f;œå&#x8d;•çš„å“&#x8d;åº”åŠ¨ä½œç±»åž‹ï¼Œç›®å‰&#x8d;æœ‰clickã€&#x81;viewä¸¤ç§&#x8d;ç±»åž‹</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="312" parent="31" name="menukey">
+        <comment>å…³é”®è¯&#x8d; clickç±»åž‹å¿…é¡»</comment>
+        <data-type>varchar(128)|0</data-type>
+      </column>
+      <column id="313" parent="31" name="menuurl">
+        <comment>è§¦å&#x8f;‘url  viewç±»åž‹å¿…é¡»</comment>
+        <data-type>varchar(256)|0</data-type>
+      </column>
+      <column id="314" parent="31" name="menuseq">
+        <comment>åº&#x8f;å&#x8f;·</comment>
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="315" parent="31" name="menustatus">
+        <comment>çŠ¶æ€&#x81;0ï¼šå&#x90;¯ç”¨ï¼Œ1ï¼šä¸&#x8d;å&#x90;¯ç”¨</comment>
+        <data-type>int(10)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="316" parent="31" name="parentmenu">
+        <comment>çˆ¶çº§è&#x8f;œå&#x8d;•å&#x90;&#x8d;ç§°ï¼Œä¸€çº§è&#x8f;œå&#x8d;•ä¸ºç©º</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="317" parent="31" name="bindstatus">
+        <comment>æ˜¯å&#x90;¦ç»‘å®šï¼šäºŒçº§è&#x8f;œå&#x8d;•</comment>
+        <data-type>int(10)|0</data-type>
+        <default-expression>&apos;10&apos;</default-expression>
+      </column>
+      <column id="318" parent="32" name="telphone">
+        <comment>电话号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="319" parent="32" name="context">
+        <comment>发送内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="320" parent="32" name="attribute1">
+        <comment>可扩展字段1</comment>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="321" parent="32" name="attribute2">
+        <comment>可扩展字段2</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="322" parent="33" name="telphone">
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="323" parent="33" name="context">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="324" parent="33" name="attribute1">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="325" parent="33" name="attribute2">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="326" parent="34" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="327" parent="34" name="timestamp">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="328" parent="34" name="phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="329" parent="34" name="context">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="330" parent="34" name="createtime">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="331" parent="34" name="qytype">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="332" parent="34" name="attribute1">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="333" parent="34" name="attribute2">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="334" parent="34" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="335" parent="35" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="336" parent="35" name="timestamp">
+        <comment>时间戳</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="337" parent="35" name="phone">
+        <comment>电话号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="338" parent="35" name="context">
+        <comment>发送内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="339" parent="35" name="createtime">
+        <comment>消息创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="340" parent="35" name="qytype">
+        <comment>是否发送成功，1成功，0失败</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="341" parent="35" name="attribute1">
+        <comment>可扩展字段1</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="342" parent="35" name="attribute2">
+        <comment>可扩展字段2</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="343" parent="35" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="344" parent="36" name="telphone">
+        <comment>有发送权限人的电话号码</comment>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="345" parent="37" name="pname">
+        <comment>å…¬ä¼—å&#x8f;·å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="346" parent="37" name="msgtype">
+        <comment>æ¶ˆæ&#x81;¯ç±»åž‹(EVENTã€&#x81;TEXTã€&#x81;IMAGEã€&#x81;VIDEOã€&#x81;LOCATIONã€&#x81;VOICEã€&#x81;LINK)</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="347" parent="37" name="event">
+        <comment>äº‹ä»¶ç±»åž‹ï¼ˆå…³æ³¨ï¼šsubscribeï¼‰æ­¤å­—æ®µå&#x8f;ªæœ‰msgtypeä¸ºeventæ—¶æ‰&#x8d;æœ‰æ•ˆ</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="348" parent="37" name="content">
+        <comment>POSTå†…å®¹å…³é”®è¯&#x8d;</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="349" parent="37" name="materialid">
+        <comment>ç´ æ&#x9d;&#x90;id</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="350" parent="37" name="materialtype">
+        <comment>ç´ æ&#x9d;&#x90;ç±»åž‹ï¼ˆTEXT IMAGE NEWSï¼‰,æ­¤å­—æ®µç”¨æ&#x9d;¥æŒ‡æ˜ŽåŽ»å“ªå¼ ç´ æ&#x9d;&#x90;è¡¨èŽ·å&#x8f;–ç±»å®¹</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="351" parent="37" name="replyname">
+        <comment>è§„åˆ™å&#x90;&#x8d;ï¼ˆå…³é”®å­—å›žå¤&#x8d;æ—¶è®¾ç½®çš„å›žå¤&#x8d;è§„åˆ™ï¼‰</comment>
+        <data-type>varchar(60)|0</data-type>
+      </column>
+      <column id="352" parent="37" name="replyid">
+        <comment>åº&#x8f;åˆ—</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="353" parent="37" name="bindstatus">
+        <comment>0:false ,1:true</comment>
+        <data-type>int(10)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="354" parent="37" name="PRIMARY">
+        <columns>replyid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="355" parent="38" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(100)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="356" parent="38" name="templateid">
+        <comment>模板id</comment>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="357" parent="38" name="sendMsgkey">
+        <comment>发送模板消息key</comment>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="358" parent="38" name="sendMsgvalue">
+        <comment>发送模板消息value</comment>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="359" parent="38" name="templatename">
+        <comment>模板名称</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <key id="360" parent="38" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="361" parent="39" name="shopname">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="362" parent="39" name="shopaddress">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="363" parent="39" name="shoptelphone">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="364" parent="39" name="shopblock">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="365" parent="39" name="shopramark">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="366" parent="39" name="shopmap_north">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="367" parent="39" name="shopmap_east">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="368" parent="39" name="shoppic">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="369" parent="40" name="useraccount">
+        <comment>ç³»ç»Ÿè´¦å&#x8f;·</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="370" parent="40" name="userpsw">
+        <comment>å¯†ç &#x81;</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="371" parent="40" name="userphone">
+        <comment>ç”µè¯&#x9d;å&#x8f;·ç &#x81;</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="372" parent="41" name="templateid">
+        <comment>æ¨¡æ&#x9d;¿æ¶ˆæ&#x81;¯ID</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="373" parent="41" name="pname">
+        <comment>å…¬ä¼—å&#x8f;·</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="374" parent="41" name="title">
+        <comment>æ¨¡æ&#x9d;¿æ ‡é¢˜</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="375" parent="41" name="content">
+        <comment>æ¨¡æ&#x9d;¿å†…å®¹</comment>
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="376" parent="42" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(100)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="377" parent="42" name="templateid">
+        <comment>模板id</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="378" parent="42" name="title">
+        <comment>模板实例名称</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="379" parent="42" name="first">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="380" parent="42" name="keyword1">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="381" parent="42" name="keyword2">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="382" parent="42" name="keyword3">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="383" parent="42" name="keyword4">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="384" parent="42" name="remark">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="385" parent="42" name="url">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <key id="386" parent="42" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="387" parent="43" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="388" parent="43" name="msgtype">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="389" parent="43" name="status">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="390" parent="43" name="msg">
+        <data-type>varchar(1024)|0</data-type>
+      </column>
+      <column id="391" parent="43" name="response">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="392" parent="43" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="393" parent="43" name="sendtime">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <index id="394" parent="43" name="teiphoneIndex">
+        <columns>telphone</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="395" parent="43" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="396" parent="44" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(100)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="397" parent="44" name="telphone">
+        <comment>测试电话号码</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="398" parent="44" name="type">
+        <comment>类型 1.正常用户 0.非正常用户</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="399" parent="44" name="addtime">
+        <comment>添加号码时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="400" parent="44" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="401" parent="45" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="402" parent="45" name="telphone">
+        <comment>手机号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="403" parent="45" name="openid">
+        <comment>openid</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="404" parent="45" name="state">
+        <comment>状态 1，成功；0，失败</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="405" parent="45" name="createtime">
+        <comment>消息创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="406" parent="45" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="407" parent="46" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="408" parent="46" name="telphone">
+        <comment>兑换手机号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="409" parent="46" name="openid">
+        <comment>openid</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="410" parent="46" name="ticketNumber">
+        <comment>卡券号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="411" parent="46" name="createtime">
+        <comment>消息创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="412" parent="46" name="phone">
+        <comment>领取手机号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <key id="413" parent="46" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="414" parent="47" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(100)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="415" parent="47" name="telphone">
+        <comment>手机号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="416" parent="47" name="ticketNumber">
+        <comment>卡券号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="417" parent="47" name="openid">
+        <comment>openid</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="418" parent="47" name="state">
+        <comment>状态 1，已领用；0，未领用</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="419" parent="47" name="addtime">
+        <comment>消息创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="420" parent="47" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="421" parent="48" name="from_openid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="422" parent="48" name="to_openid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="423" parent="48" name="share_time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="424" parent="48" name="sc_type">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="425" parent="48" name="fhbid">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="426" parent="49" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="427" parent="49" name="timestamp">
+        <comment>时间戳</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="428" parent="49" name="phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="429" parent="49" name="pricenum">
+        <comment>金额</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="430" parent="49" name="jztime">
+        <comment>余额不足提醒：截止时间</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="431" parent="49" name="channel">
+        <comment>渠道</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="432" parent="49" name="zdtime">
+        <comment>月账单时间</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="433" parent="49" name="txtype">
+        <comment>提醒类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="434" parent="49" name="createtime">
+        <comment>消息创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="435" parent="49" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="436" parent="50" name="wpname">
+        <comment>å…¬ä¼—å&#x8f;·</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="437" parent="50" name="openid">
+        <comment>ç”¨æˆ·openid</comment>
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="438" parent="50" name="logtype">
+        <comment>æ“&#x8d;ä½œç±»åž‹ï¼šin:ç»‘å®šï¼Œout:è§£ç»‘ï¼Œnotæœªç»‘å®š</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="439" parent="50" name="logtime">
+        <comment>å&#x8f;‘ç”Ÿæ—¶é—´</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="440" parent="50" name="bindpage">
+        <comment>ç»‘å®šçŠ¶æ€&#x81;inï¼Œè&#x8f;œå&#x8d;•ç‚¹å‡»å›žå¤&#x8d;è¯­ç»‘å®šé¡µé&#x9d;¢ï¼š1ï¼›é¦–æ¬¡å…³æ³¨å›žå¤&#x8d;è¯­ç»‘å®šé¡µé&#x9d;¢ï¼š2ï¼›æ&#x8f;&#x90;ä¾›æ´»åŠ¨ç»‘å®šé¡µé&#x9d;¢ï¼š3ï¼›</comment>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="441" parent="50" name="telphone">
+        <comment>ç»‘å®šè§£ç»‘æ‰‹æœºå&#x8f;·ç &#x81;</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="442" parent="51" name="groupid">
+        <comment>ç¾¤ç»„ID</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="443" parent="51" name="groupname">
+        <comment>ç¾¤ç»„å&#x90;&#x8d;ç§°</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="444" parent="51" name="createtime">
+        <comment>åˆ›å»ºæ—¶é—´</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="445" parent="51" name="wpname">
+        <comment>å…¬ä¼—å&#x8f;·</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="446" parent="52" name="wpname">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="447" parent="52" name="openid">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="448" parent="52" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="449" parent="52" name="addtime">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="450" parent="52" name="nickname">
+        <data-type>varchar(1000)|0</data-type>
+      </column>
+      <column id="451" parent="52" name="sex">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="452" parent="52" name="city">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="453" parent="52" name="country">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="454" parent="52" name="province">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="455" parent="52" name="headimgurl">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="456" parent="52" name="bindstatus">
+        <data-type>int(10)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="457" parent="52" name="groupid">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="458" parent="52" name="bindtype">
+        <data-type>int(10)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="459" parent="52" name="userid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="460" parent="52" name="citycode">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="461" parent="52" name="brand">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="462" parent="52" name="worknumber">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="463" parent="52" name="eventkey">
+        <data-type>varchar(250)|0</data-type>
+      </column>
+      <column id="464" parent="52" name="member_no">
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="465" parent="52" name="hyctime">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="466" parent="52" name="qxgztime">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="467" parent="52" name="fromopenid">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <index id="468" parent="52" name="index_user_info_openid">
+        <columns>openid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="469" parent="52" name="index_user_member_no">
+        <columns>member_no</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="470" parent="52" name="index_user_telphone">
+        <columns>telphone</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <column id="471" parent="53" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="472" parent="53" name="numvalue">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="473" parent="53" name="PRIMARY">
+        <columns>name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="474" parent="54" name="open_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="475" parent="54" name="create_time">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="476" parent="55" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="477" parent="55" name="field_1">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="478" parent="56" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="479" parent="56" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="480" parent="56" name="keyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="481" parent="56" name="startlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="482" parent="56" name="expirykeyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="483" parent="56" name="expiryinfo">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="484" parent="56" name="expirypwd">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="485" parent="56" name="introduction">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="486" parent="56" name="content">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="487" parent="56" name="actstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="488" parent="56" name="actendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="489" parent="56" name="expstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="490" parent="56" name="expendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="491" parent="56" name="drawnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="492" parent="56" name="drawreply">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="493" parent="56" name="isprizename">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="494" parent="56" name="isprizenum">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="495" parent="56" name="endtitle">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="496" parent="56" name="endcontent">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="497" parent="56" name="endlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="498" parent="56" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="499" parent="56" name="qrcodepic">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="500" parent="56" name="wpname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="501" parent="56" name="isbind">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="502" parent="56" name="isattent">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="503" parent="56" name="activityurl">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="504" parent="57" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="505" parent="57" name="pname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="506" parent="57" name="openid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="507" parent="57" name="isdraw">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="508" parent="57" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="509" parent="57" name="winncode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="510" parent="57" name="winnlevel">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="511" parent="57" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="512" parent="57" name="prizename">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="513" parent="57" name="prizeno">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="514" parent="57" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="515" parent="58" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="516" parent="58" name="playnum">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="517" parent="58" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="518" parent="58" name="activitycode">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="519" parent="59" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="520" parent="59" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="521" parent="59" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="522" parent="59" name="odds">
+        <data-type>int(30)|0</data-type>
+      </column>
+      <column id="523" parent="59" name="allnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="524" parent="59" name="drawnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="525" parent="59" name="overplusnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="526" parent="59" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="527" parent="59" name="prizelevel">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="528" parent="59" name="prizeno">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="529" parent="60" name="t_code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="530" parent="60" name="status">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="531" parent="61" name="openid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="532" parent="61" name="winn_code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="533" parent="61" name="winn_time">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="534" parent="61" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="535" parent="61" name="is_winn">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="536" parent="62" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="537" parent="62" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="538" parent="62" name="keyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="539" parent="62" name="startlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="540" parent="62" name="expirykeyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="541" parent="62" name="expiryinfo">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="542" parent="62" name="expirypwd">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="543" parent="62" name="introduction">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="544" parent="62" name="content">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="545" parent="62" name="actstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="546" parent="62" name="actendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="547" parent="62" name="expstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="548" parent="62" name="expendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="549" parent="62" name="drawnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="550" parent="62" name="drawreply">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="551" parent="62" name="isprizename">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="552" parent="62" name="isprizenum">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="553" parent="62" name="endtitle">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="554" parent="62" name="endcontent">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="555" parent="62" name="endlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="556" parent="62" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="557" parent="62" name="qrcodepic">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="558" parent="62" name="wpname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="559" parent="62" name="isbind">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="560" parent="62" name="isattent">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="561" parent="62" name="activityurl">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="562" parent="63" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="563" parent="63" name="pname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="564" parent="63" name="openid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="565" parent="63" name="isdraw">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="566" parent="63" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="567" parent="63" name="winncode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="568" parent="63" name="winnlevel">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="569" parent="63" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="570" parent="63" name="prizename">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="571" parent="63" name="prizeno">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="572" parent="63" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="573" parent="64" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="574" parent="64" name="playnum">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="575" parent="64" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="576" parent="64" name="activitycode">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="577" parent="65" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="578" parent="65" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="579" parent="65" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="580" parent="65" name="odds">
+        <data-type>int(30)|0</data-type>
+      </column>
+      <column id="581" parent="65" name="allnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="582" parent="65" name="drawnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="583" parent="65" name="overplusnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="584" parent="65" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="585" parent="65" name="prizelevel">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="586" parent="65" name="prizeno">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="587" parent="66" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="588" parent="66" name="pname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="589" parent="66" name="openid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="590" parent="66" name="isdraw">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="591" parent="66" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="592" parent="66" name="winncode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="593" parent="66" name="winnlevel">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="594" parent="66" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="595" parent="66" name="prizename">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="596" parent="66" name="prizeno">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="597" parent="66" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="598" parent="66" name="status">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="599" parent="67" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(100)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="600" parent="67" name="openid">
+        <comment>用户标识</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="601" parent="67" name="sendtime">
+        <comment>发红包的时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="602" parent="67" name="hbtype">
+        <comment>红包类型 1:普通红包   2:拼手气红包</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="603" parent="67" name="remark">
+        <comment>红包标语</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="604" parent="67" name="amount">
+        <comment>流量</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="605" parent="67" name="nickname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <key id="606" parent="67" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="607" parent="68" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(200)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="608" parent="68" name="openid">
+        <comment>用户</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="609" parent="68" name="amount">
+        <data-type>int(100)|0</data-type>
+      </column>
+      <column id="610" parent="68" name="opertype">
+        <comment>类型  1.购买 2.别人送的 3.发红包 4.兑换</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="611" parent="68" name="opertime">
+        <comment>操作时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="612" parent="68" name="openid2">
+        <comment>谁发的(类型为2的时候才有值)</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="613" parent="68" name="money">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="614" parent="68" name="fhbid">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="615" parent="68" name="telphone">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <key id="616" parent="68" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="617" parent="69" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(200)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="618" parent="69" name="telphone">
+        <comment>电话</comment>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="619" parent="69" name="errorMsg">
+        <comment>错误信息</comment>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="620" parent="69" name="handleResult">
+        <comment>类型  0.成功 1.成功</comment>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="621" parent="69" name="opertime">
+        <comment>操作时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="622" parent="69" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="623" parent="70" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(255)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="624" parent="70" name="fhbid">
+        <comment>与红包表的id相关联</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="625" parent="70" name="openid">
+        <comment>抢到红包的用户openid</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="626" parent="70" name="opertime">
+        <comment>什么时间抢到的</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="627" parent="70" name="amount">
+        <comment>流量数额</comment>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="628" parent="70" name="type">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="629" parent="70" name="nickname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <key id="630" parent="70" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="631" parent="71" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="632" parent="71" name="openid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="633" parent="71" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="634" parent="71" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="635" parent="71" name="actcategory">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="636" parent="71" name="action">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="637" parent="72" name="id">
+        <comment>id</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="638" parent="72" name="telphone">
+        <comment>发送模板消息用户电话号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="639" parent="73" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="640" parent="73" name="template_id">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="641" parent="73" name="errcode">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="642" parent="73" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="643" parent="73" name="result">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="644" parent="73" name="action">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="645" parent="74" name="openid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="646" parent="74" name="sendtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="647" parent="74" name="result">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="648" parent="74" name="status">
+        <data-type>varchar(5)|0</data-type>
+      </column>
+      <column id="649" parent="75" name="naireid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="650" parent="75" name="nairetitle">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="651" parent="75" name="begintime">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="652" parent="75" name="endtime">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="653" parent="75" name="logopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="654" parent="75" name="sharepic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="655" parent="75" name="isbind">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="656" parent="75" name="isattent">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="657" parent="75" name="createtime">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="658" parent="75" name="wpname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="659" parent="75" name="starttitle">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="660" parent="75" name="startcontent">
+        <data-type>varchar(3000)|0</data-type>
+      </column>
+      <column id="661" parent="75" name="startpic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="662" parent="75" name="endtitle">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="663" parent="75" name="endcontent">
+        <data-type>varchar(3000)|0</data-type>
+      </column>
+      <column id="664" parent="75" name="endpic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="665" parent="75" name="islogin">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="666" parent="75" name="iswhitelist">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="667" parent="75" name="isblacklist">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="668" parent="75" name="content">
+        <data-type>varchar(3000)|0</data-type>
+      </column>
+      <column id="669" parent="75" name="activityurl">
+        <data-type>varchar(3000)|0</data-type>
+      </column>
+      <column id="670" parent="75" name="qrcodepic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="671" parent="75" name="isprize">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="672" parent="75" name="luckydrawurl">
+        <data-type>varchar(3000)|0</data-type>
+      </column>
+      <column id="673" parent="76" name="optionid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="674" parent="76" name="content">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="675" parent="76" name="questionid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="676" parent="76" name="seqid">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="677" parent="77" name="questionid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="678" parent="77" name="naireid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="679" parent="77" name="type">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="680" parent="77" name="name">
+        <data-type>varchar(1000)|0</data-type>
+      </column>
+      <column id="681" parent="77" name="typeid">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="682" parent="77" name="ispic">
+        <data-type>varchar(1)|0</data-type>
+      </column>
+      <column id="683" parent="77" name="seqid">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="684" parent="78" name="replyid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="685" parent="78" name="naireid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="686" parent="78" name="questionid">
+        <data-type>varchar(36)|0</data-type>
+      </column>
+      <column id="687" parent="78" name="optionid">
+        <data-type>varchar(3000)|0</data-type>
+      </column>
+      <column id="688" parent="78" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="689" parent="78" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="690" parent="78" name="recontent">
+        <data-type>varchar(3000)|0</data-type>
+      </column>
+      <column id="691" parent="78" name="imgpath">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="692" parent="79" name="wjdc_id">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="693" parent="79" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="694" parent="79" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="695" parent="79" name="loginstate">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="696" parent="79" name="loginway">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="697" parent="79" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="698" parent="80" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="699" parent="81" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="700" parent="81" name="wjdc_id">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="701" parent="81" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="702" parent="82" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="703" parent="82" name="telphone">
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="704" parent="82" name="money">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="705" parent="82" name="state">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="706" parent="82" name="logtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="707" parent="82" name="default1">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="708" parent="82" name="default2">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="709" parent="82" name="default3">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="710" parent="82" name="default4">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="711" parent="82" name="default5">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="712" parent="82" name="tradeno">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="713" parent="83" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="714" parent="83" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="715" parent="83" name="keyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="716" parent="83" name="startlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="717" parent="83" name="expirykeyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="718" parent="83" name="expiryinfo">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="719" parent="83" name="expirypwd">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="720" parent="83" name="introduction">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="721" parent="83" name="content">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="722" parent="83" name="actstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="723" parent="83" name="actendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="724" parent="83" name="expstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="725" parent="83" name="expendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="726" parent="83" name="drawnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="727" parent="83" name="drawreply">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="728" parent="83" name="isprizename">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="729" parent="83" name="isprizenum">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="730" parent="83" name="endtitle">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="731" parent="83" name="endcontent">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="732" parent="83" name="endlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="733" parent="83" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="734" parent="83" name="qrcodepic">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="735" parent="83" name="wpname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="736" parent="83" name="isbind">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="737" parent="83" name="isattent">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="738" parent="83" name="activityurl">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="739" parent="84" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="740" parent="84" name="pname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="741" parent="84" name="openid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="742" parent="84" name="isdraw">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="743" parent="84" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="744" parent="84" name="winncode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="745" parent="84" name="winnlevel">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="746" parent="84" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="747" parent="84" name="prizename">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="748" parent="84" name="prizeno">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="749" parent="84" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="750" parent="85" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="751" parent="85" name="playnum">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="752" parent="85" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="753" parent="85" name="activitycode">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="754" parent="86" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="755" parent="86" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="756" parent="86" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="757" parent="86" name="odds">
+        <data-type>int(30)|0</data-type>
+      </column>
+      <column id="758" parent="86" name="allnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="759" parent="86" name="drawnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="760" parent="86" name="overplusnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="761" parent="86" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="762" parent="86" name="prizelevel">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="763" parent="86" name="prizeno">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="764" parent="87" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="765" parent="87" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="766" parent="87" name="keyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="767" parent="87" name="startlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="768" parent="87" name="expirykeyword">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="769" parent="87" name="expiryinfo">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="770" parent="87" name="expirypwd">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="771" parent="87" name="introduction">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="772" parent="87" name="content">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="773" parent="87" name="actstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="774" parent="87" name="actendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="775" parent="87" name="expstarttime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="776" parent="87" name="expendtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="777" parent="87" name="drawnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="778" parent="87" name="drawreply">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="779" parent="87" name="isprizename">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="780" parent="87" name="isprizenum">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="781" parent="87" name="endtitle">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="782" parent="87" name="endcontent">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="783" parent="87" name="endlogopic">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="784" parent="87" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="785" parent="87" name="qrcodepic">
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="786" parent="87" name="wpname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="787" parent="87" name="isbind">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="788" parent="87" name="isattent">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="789" parent="87" name="activityurl">
+        <data-type>varchar(2000)|0</data-type>
+      </column>
+      <column id="790" parent="88" name="cash_code">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="791" parent="88" name="password">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="792" parent="88" name="status">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="793" parent="88" name="category">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="794" parent="89" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="795" parent="89" name="pname">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="796" parent="89" name="openid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="797" parent="89" name="isdraw">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="798" parent="89" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="799" parent="89" name="winncode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="800" parent="89" name="winnlevel">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="801" parent="89" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="802" parent="89" name="prizename">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="803" parent="89" name="prizeno">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="804" parent="89" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="805" parent="90" name="openid">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="806" parent="90" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="807" parent="90" name="isdraw">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="808" parent="90" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="809" parent="91" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="810" parent="91" name="playnum">
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="811" parent="91" name="createtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="812" parent="91" name="activitycode">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="813" parent="92" name="prizecode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="814" parent="92" name="activitycode">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="815" parent="92" name="name">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="816" parent="92" name="odds">
+        <data-type>int(30)|0</data-type>
+      </column>
+      <column id="817" parent="92" name="allnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="818" parent="92" name="drawnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="819" parent="92" name="overplusnum">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="820" parent="92" name="createtime">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="821" parent="92" name="prizelevel">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="822" parent="92" name="prizeno">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="823" parent="93" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="824" parent="93" name="telphone">
+        <comment>手机号码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="825" parent="93" name="openid">
+        <comment>openid</comment>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="826" parent="93" name="inserttime">
+        <comment>插入时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="827" parent="93" name="state">
+        <comment>发送类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="828" parent="93" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="829" parent="94" name="wjdc_id">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="830" parent="94" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="831" parent="94" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="832" parent="94" name="loginstate">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="833" parent="94" name="loginway">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="834" parent="95" name="telphone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="835" parent="95" name="wjdc_id">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="836" parent="95" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="837" parent="96" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="838" parent="96" name="telphone">
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="839" parent="96" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="840" parent="96" name="fluxvalue">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="841" parent="96" name="usemoney">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="842" parent="96" name="status">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="843" parent="96" name="code">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="844" parent="97" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="845" parent="97" name="telphone">
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="846" parent="97" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="847" parent="97" name="fluxvalue">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="848" parent="97" name="usemoney">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="849" parent="97" name="status">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="850" parent="97" name="code">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="851" parent="97" name="default1">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="852" parent="97" name="default2">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="853" parent="98" name="code">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="854" parent="98" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="855" parent="98" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="856" parent="98" name="status">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="857" parent="98" name="fluxvalue">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="858" parent="98" name="fluxnum">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="859" parent="98" name="fluxtype">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="860" parent="98" name="fluxovernum">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="861" parent="98" name="telphone">
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="862" parent="98" name="fluxovervalue">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="863" parent="99" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="864" parent="99" name="code">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="865" parent="99" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="866" parent="99" name="telphone">
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="867" parent="99" name="fluxvalue">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="868" parent="100" name="openid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="869" parent="100" name="telphone">
+        <data-type>varchar(15)|0</data-type>
+      </column>
+      <column id="870" parent="100" name="nickname">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="871" parent="100" name="headimgurl">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="872" parent="100" name="sex">
+        <data-type>varchar(2)|0</data-type>
+      </column>
+      <column id="873" parent="100" name="province">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="874" parent="100" name="city">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="875" parent="100" name="country">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="876" parent="100" name="addtime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="877" parent="100" name="fluxvalue">
+        <data-type>int(10)|0</data-type>
+      </column>
+      <column id="878" parent="101" name="openid">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="879" parent="101" name="phone">
+        <data-type>varchar(11)|0</data-type>
+      </column>
+      <column id="880" parent="101" name="state">
+        <comment>0：开始   1：活动1成功  2：活动1失败  3：活动2成功 4：活动2失败</comment>
+        <data-type>varchar(1)|0</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="881" parent="101" name="dateTime">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="882" parent="101" name="promoId1">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="883" parent="101" name="condId1">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="884" parent="101" name="activitystate1">
+        <data-type>varchar(1)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="885" parent="101" name="promoId2">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="886" parent="101" name="condId2">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="887" parent="101" name="activitystate2">
+        <data-type>varchar(1)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="888" parent="102" name="AT_KEY">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(32)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="889" parent="102" name="TO_USER_NAME">
+        <comment>公众号标示</comment>
+        <data-type>varchar(64)|0</data-type>
+      </column>
+      <column id="890" parent="102" name="FROM_USER_NAME">
+        <comment>用户OPENID</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="891" parent="102" name="CREATE_TIME">
+        <comment>时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="892" parent="102" name="EVENT_VAL">
+        <comment>消息类型</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="893" parent="102" name="AUTH_STATE">
+        <comment>授权状态（0：成功；1：失败）</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="894" parent="102" name="ORDER_ID">
+        <comment>订单号</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="895" parent="102" name="APPID">
+        <comment>公众号appid</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="896" parent="102" name="SOURCE">
+        <comment>来源（web:H5;app:app）</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <key id="897" parent="102" name="PRIMARY">
+        <columns>AT_KEY</columns>
+        <primary>1</primary>
+      </key>
+      <column id="898" parent="103" name="CD_KEY">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="899" parent="103" name="USER_OPEN_ID">
+        <comment>用户openid</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="900" parent="103" name="DZFP_CODE">
+        <comment>微信返回的发票code</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="901" parent="103" name="APPID">
+        <comment>公众号appid</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="902" parent="103" name="CREATE_TIME">
+        <comment>创建时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="903" parent="103" name="STATE">
+        <comment>插入状态(0:成功;1:失败)</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="904" parent="103" name="DZFP_KEY">
+        <comment>发票主键</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="905" parent="103" name="PDF_FILE_ID">
+        <comment>发票pdf文件id</comment>
+        <data-type>varchar(128)|0</data-type>
+      </column>
+      <column id="906" parent="103" name="FAIL_CAUSE">
+        <comment>失败原因</comment>
+        <data-type>varchar(1024)|0</data-type>
+      </column>
+      <key id="907" parent="103" name="PRIMARY">
+        <columns>CD_KEY</columns>
+        <primary>1</primary>
+      </key>
+      <column id="908" parent="104" name="UP_KEY">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="909" parent="104" name="PHONE_NO">
+        <comment>用户手机号码</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="910" parent="104" name="UP_YEARMONTH">
+        <comment>电子发票月份</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="911" parent="104" name="MEDIA_ID">
+        <comment>微信返回的电子发票主键</comment>
+        <data-type>varchar(128)|0</data-type>
+      </column>
+      <column id="912" parent="104" name="UP_DATETIME">
+        <comment>上传时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="913" parent="104" name="STATE">
+        <comment>上传状态(0:成功;1:失败)</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="914" parent="104" name="DZFP_KEY">
+        <comment>发票主键</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="915" parent="104" name="PDF_FILE_PATH">
+        <comment>发票pdf文件全路径</comment>
+        <data-type>varchar(128)|0</data-type>
+      </column>
+      <column id="916" parent="104" name="FAIL_CAUSE">
+        <comment>失败原因</comment>
+        <data-type>varchar(1024)|0</data-type>
+      </column>
+      <key id="917" parent="104" name="PRIMARY">
+        <columns>UP_KEY</columns>
+        <primary>1</primary>
+      </key>
+      <column id="918" parent="105" name="RE_KEY">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="919" parent="105" name="WC_APPID">
+        <comment>公众号appid</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="920" parent="105" name="CARD_ID">
+        <comment>电子发票模板card_id</comment>
+        <data-type>varchar(32)|0</data-type>
+      </column>
+      <column id="921" parent="105" name="STATE">
+        <comment>是否有效(0:有效;1:无效)</comment>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="922" parent="105" name="CREATE_TIME">
+        <comment>创建时间</comment>
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="923" parent="105" name="PRIMARY">
+        <columns>RE_KEY</columns>
+        <primary>1</primary>
+      </key>
+      <column id="924" parent="106" name="addressNum">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="925" parent="106" name="address">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="926" parent="106" name="phonenum">
+        <data-type>varchar(500)|0</data-type>
+      </column>
+      <column id="927" parent="107" name="test">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+    </database-model>
+  </data-source>
+</component>

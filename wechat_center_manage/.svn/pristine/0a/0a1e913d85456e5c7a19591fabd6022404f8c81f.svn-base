@@ -1,0 +1,64 @@
+package com.wechat.cs.modules.sys.dao.login;
+
+import com.wechat.cs.modules.sys.entity.login.UserInfoBean;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+  Created by xq on 2018/1/25.
+ * DAO层实现
+ */
+@Repository("userMapper")
+public interface UserMapper {
+    /**
+     * 根据用户名查询用户信息
+     * @param username
+     * @return
+     */
+    UserInfoBean findByUsername(String username);
+
+    /**
+     * 根据用户名查询用户权限信息
+     * @param username
+     * @return
+     */
+    List<Map<String,Object>> findPermissionsByusername(String username);
+
+    /**
+     * 根据用户名查询用户拥有的权限菜单信息
+     * @param username 用户名
+     * @param parentId 子系统编码
+     * @return
+     */
+    List<Map<String,String>> findMenusByusername(@Param("username") String username, @Param("parentId") String parentId);
+
+    /**
+     * 根据用户名修改用户密码
+     * @param username
+     * @return
+     */
+    int updateUserInfoByUsername(@Param("username") String username, @Param("password") String password);
+
+    /**
+     * 分页查询所有的用户信息
+     * @return
+     */
+    List<Map<String, Object>> findAllUser(Map<String, String> param);
+
+    /**
+     * 根据用户名称删除用户信息
+     * @param username 需要删除的用户名
+     * @return
+     */
+    int delUser(String username);
+
+    /**
+     * 批量删除用户信息
+     * @param userList 需要批量删除的用户列表
+     * @return
+     */
+    int deleteSerial(@Param("userList")List<String> userList);
+}

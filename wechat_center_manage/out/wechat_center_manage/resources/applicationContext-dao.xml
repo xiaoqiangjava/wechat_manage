@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- 配置整合mybatis过程 -->
+	<!-- 1.配置数据库相关参数properties的属性：${url} -->
+	<context:property-placeholder location="classpath:resources/service.properties" ignore-unresolvable="true" />
+
+	<!-- 2.数据库连接池 -->
+	<bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">
+  		<property name="driverClass" value="${jdbc.driverClassName}" />
+  		<property name="jdbcUrl" value="${jdbc.url}" />
+  		<property name="username" value="${jdbc.username}" />
+  		<property name="password" value="${jdbc.password}" />
+  		<!-- 设置每个分区数 -->
+  		<property name="partitionCount" value="${jdbc.partitionCount}" />
+		<!-- 设置每个分区含有connection最大个数 -->
+  		<property name="maxConnectionsPerPartition" value="${jdbc.maxConnectionsPerPartition}" />
+  		<!-- 设置每个分区含有connection最小个数 -->
+  		<property name="minConnectionsPerPartition" value="${jdbc.minConnectionsPerPartition}" />
+		<!-- 设置分区中的connection增长数量 -->
+  		<property name="acquireIncrement" value="${jdbc.acquireIncrement}" />
+  		<!-- 设置连接池阀值 -->
+  		<property name="poolAvailabilityThreshold" value="${jdbc.poolAvailabilityThreshold}"></property>
+  		<!-- 设置获取connection超时的时间 -->
+  		<property name="connectionTimeoutInMs" value="${jdbc.connectionTimeout}"></property>
+		<!-- 连接池中未使用的链接最大存活时间 -->
+  		<property name="idleMaxAgeInMinutes" value="${jdbc.idleMaxAge}" />
+  		<!-- 检查数据库连接池中空闲连接的间隔时间 -->
+  		<property name="idleConnectionTestPeriodInMinutes" value="${jdbc.idleConnectionTestPeriod}" />
+ 	</bean>
+
+	<!-- 3.配置SqlSessionFactory对象 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 注入数据库连接池 -->
+		<property name="dataSource" ref="dataSource" />
+		<!-- 配置MyBaties全局配置文件:mybatis-config.xml -->
+		<property name="configLocation" value="classpath:resources/mybatis-config.xml" />
+		<!-- 扫描sql配置文件:mapper需要的xml文件 -->
+		<property name="mapperLocations" value="classpath:resources/mapper/**/*.xml" />
+		<!-- 使用分页插件 -->
+		<property name="plugins">
+			<array>
+				<bean class="com.github.pagehelper.PageInterceptor">
+					<property name="properties">
+						<value>
+							offsetAsPageNum=true
+							rowBoundsWithCount=true
+							reasonable=true
+						</value>
+					</property>
+				</bean>
+			</array>
+		</property>
+	</bean>
+
+	<!-- 4.配置扫描Dao接口包，动态实现Dao接口，注入到spring容器中 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 注入sqlSessionFactory -->
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+		<!-- 给出需要扫描Dao接口包 -->
+		<property name="basePackage" value="com.wechat.cs.**.dao" />
+	</bean>
+</beans>
